@@ -49,6 +49,30 @@
 }
 /*Endoof all animations*/
 /*CSS Reciclado*/
+.divisor1{
+    display: none;
+}
+.menu{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7px 5px;
+
+    .line{
+        width: 90%;
+        height: 4px;
+        background-color: #BF0033;
+        border-radius: .5rem;
+    }
+}
+.menu:hover{
+    cursor: pointer;
+}
 .destaque{
     color: #BF0033;
 }
@@ -140,11 +164,6 @@ h3{
 }
 /*CSS Reciclado*/
 body{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: fit-content;
     overflow-x:hidden ;
 }
 header{
@@ -496,13 +515,9 @@ section{
     height: 50vh;
     display: flex;
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .card-section .infos{
     width: 50%;
-    
     h3{
         font-size: 24px;
     }
@@ -569,6 +584,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     flex-direction: column;
     background-color: #F9F9F9;
     padding: 50px 0px;
@@ -592,6 +608,7 @@ section{
 .gallery-section .gallery-slider{
     width: 100%;
     height:40vh;
+    overflow: hidden;
     display: flex;
     align-items: flex-start;
     margin-bottom: 50px;
@@ -599,6 +616,7 @@ section{
 }
 .gallery-section .gallery-slider .gallery-list{
     display: flex;
+    overflow: hidden;
     height: max-content;
     align-items: center;
     position: relative;

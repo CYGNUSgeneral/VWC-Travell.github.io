@@ -18,7 +18,7 @@
                 </div>
                 <span>VWC - Travell</span>
             </div>
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li>
                         <a href="#">Pagina Inicial</a>    
@@ -31,12 +31,17 @@
                     <li><a href="#">Feedbacks</a><img src="img/arrow.png" alt="" class="arrow"></li>
                     <li><a href="#">Blog</a><img src="img/arrow.png" alt="" class="arrow"></li>
                 </ul>
+                <div class="header-buttons">
+                    <button class="btn btn-line">Iniciar Sessão</button>
+                    <button class="btn btn-gradient">Contacte-nos</button>
+                </div>
             </nav>
-
-            <div class="header-buttons">
-                <button class="btn btn-line">Iniciar Sessão</button>
-                <button class="btn btn-gradient">Contacte-nos</button>
-            </div>
+            <input type="checkbox" id="active" style="display: none;">
+            <label class="menu" for="active">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
         </div>
     </header>
 
@@ -45,6 +50,7 @@
             <small>
                 <img src="" alt="">
                 <div class="mini">
+                    <div class="divisor divisor1"></div>
                     <span>Explore o Canadá</span>
                     <div class="divisor"></div>
                 </div>
@@ -95,6 +101,7 @@
             </div>
             <div class="section-text hiddenle">
                 <div class="mini">
+                    <div class="divisor divisor1"></div>
                     <small>Para si</small>
                     <div class="divisor"></div>
                 </div>
@@ -320,5 +327,22 @@
     </footer>
 
     <script src="animations.js"></script>
+    <script>/*
+        const menu = document.querySelector(".menu");
+
+        menu.addEventListener('click', () => {
+            if(menu.classList.contains("active"))
+            {
+                menu.classList.remove("active");
+                console.log("Removeu")
+            }
+            else{
+                menu.classList.add("active");
+                console.log("Adicionou")
+            }
+        })*/
+        
+
+    </script>
 </body>
 </html>

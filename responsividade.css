@@ -1,31 +1,202 @@
 @media screen and (max-width:450px) {
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
     body{
-        width: 100vw;
-        
+        overflow-x: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     header{
-        width: 100vh;
+        width: 100vw;
         padding: 0;
-        overflow-x: hidden;
+        position: relative;
     }
     header .container{
-        width: 90%;
+        width: 95%;
+        position: relative;
+    }
+    header .container nav{
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        right: 0;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        z-index: 100;
+        height: max-content;
+        flex-direction: column;
+        padding: 10px 5px;
+        justify-content: flex-start;
+        /*transform: translateX(100%)!important;*/
+        ul{
+            display: flex;
+            width: 50vw;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: none;
 
-        nav{
-            display: none;
+            li{
+                padding: 10px 0px;
+                width: 100%;
+                margin: 0;
+                text-align: left;
+            }
+        }
+        .header-buttons{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            button{
+                margin: 10px 0px;
+                width: 100%;
+            }
         }
     }
-    nav{
-        display: none;
+    header .container .header-buttons{
+        button{
+            padding: 5px 5px;
+        }
+    }
+    #active:checked ~ .navbar{ 
+        background-color: red;
+        transition: .6s;
     }
     main{
         width: 100%;
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: max-content;
+        padding: 0;
+    }
+    main .main-text{
+        width: 100%;
+        margin-bottom: 20px;
+        align-items: center;
+        padding: 0px 20px;
+        .mini{
+            justify-content: center;
+            width: 100%;
+        }
+        .divisor1{
+            display: block;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    main .main-text .main-menu{
+        width: 95%;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        .option{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border: none;
+
+            i{
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    main .main-text .main-menu .option:nth-child(2){
+        padding-right: none;
+        border-right: none;
+    }
+    main .main-foto{
+        width: 100%;
+    }
+    .intro-section{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .intro-section .section-foto{
+        width: 130%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 60px;
+    }
+    .intro-section .section-foto .imagem:nth-child(1){
+        width: max-content;
+        
+    }
+    .intro-section .section-text{
+        align-items: center;
+        padding: 0;
+        padding: 20px 0px;
+        margin: 0;
+        h3{
+            text-align: center;
+            width: 150%;
+        }
+        p{
+            text-align: center;
+            width: 150%;
+        }
+    }
+    .intro-section .section-text .numbers{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .number{
+            padding: 10px 30px;
+        }
+    }
+    .card-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .gallery-section{
+        align-items: center;
+        margin: 0;
+        padding: 20px 0px;
+        .infos{
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .newsletter-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-section .container{
+        text-align: center;
+        .input-group{
+            width: 100%;
+            padding: 10px 5px;
+        }
+        button{
+            padding: 10px 5px;
+            width: max-content;
+            width: 30%;
+        }
+    }
+    footer{
+        position: relative;
+        height: max-content;
+        .container{
+            padding: 20px 0px;
+            flex-direction: column;
+        }
     }
 }
