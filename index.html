@@ -18,7 +18,7 @@
                 </div>
                 <span>VWC - Travell</span>
             </div>
-            <nav class="navbar">
+            <nav class="navbar ">
                 <ul>
                     <li>
                         <a href="#">Pagina Inicial</a>    
@@ -36,12 +36,11 @@
                     <button class="btn btn-gradient">Contacte-nos</button>
                 </div>
             </nav>
-            <input type="checkbox" id="active" style="display: none;">
-            <label class="menu" for="active">
+            <div class="menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-            </label>
+            </div>
         </div>
     </header>
 
@@ -125,7 +124,7 @@
                 </div>
             </div>
     </section>
-
+    <!--
     <section class="card-section">
         <div class="container">
             <div class="infos hiddenri">
@@ -153,6 +152,57 @@
                     <h4>Titulo do card</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis autem atque aspernatur adipisci harum excepturi molestiae sint? Laborum nesciunt quas nulla omnis pariatur. Quam aliquam illo accusamus, at quibusdam ut!</p>
                 </div>
+            </div>
+        </div>
+    </section>-->
+    <section class="servicos">
+        <div class="cabeca">
+            <div class="mini">
+                <div class="divisor"></div>
+                <h6>Nossos Serviços</h6>
+                <div class="divisor"></div>
+            <div class="divisor divisor1"></div>
+            </div>
+            <h3>
+                Porque escolher a nossa agência?
+            </h3>
+        </div>
+        <div class="container">
+            <div class="hiddenup card">
+                <div class="icone">
+                    <img src="img/gauge.png" alt="" style="width: inherit;">
+                </div>
+                <h3>Crianças</h3>
+                <span>Trazemos as mais divertidas e coordenadas atividades, venha fazer parte dos nosos Pequenos Astronautas</span>
+                <a href="
+                3">Ler mais</a>
+            </div>
+            <div class="card hiddenup">
+                <div class="icone">
+                    <img src="img/gauge.png" alt="" style="width: inherit;">
+                </div>
+                <h3>Adultos</h3>
+                <span>informações Crédiveis de forma a poder esclarecer de forma véridica verdades sobre o espaço</span>
+                <a href="
+                3">Ler mais</a>
+            </div>
+            <div class="hiddenup card">
+                <div class="icone">
+                    <img src="img/gauge.png" alt="" style="width: inherit;">
+                </div>
+                <h3>Crianças</h3>
+                <span>Trazemos as mais divertidas e coordenadas atividades, venha fazer parte dos nosos Pequenos Astronautas</span>
+                <a href="
+                3">Ler mais</a>
+            </div>
+            <div class="card hiddenup">
+                <div class="icone">
+                    <img src="img/gauge.png" alt="" style="width: inherit;">
+                </div>
+                <h3>Adultos</h3>
+                <span>informações Crédiveis de forma a poder esclarecer de forma véridica verdades sobre o espaço</span>
+                <a href="
+                3">Ler mais</a>
             </div>
         </div>
     </section>
@@ -327,20 +377,23 @@
     </footer>
 
     <script src="animations.js"></script>
-    <script>/*
+    <script>
         const menu = document.querySelector(".menu");
-
+        const nav = document.querySelector(".navbar");
+        
         menu.addEventListener('click', () => {
             if(menu.classList.contains("active"))
             {
                 menu.classList.remove("active");
+                nav.classList.remove("active");
                 console.log("Removeu")
             }
             else{
                 menu.classList.add("active");
+                nav.classList.add("active");
                 console.log("Adicionou")
             }
-        })*/
+        })
         
 
     </script>

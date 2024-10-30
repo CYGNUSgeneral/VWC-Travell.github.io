@@ -53,11 +53,11 @@
     display: none;
 }
 .menu{
+    display: none;
     background-color: white;
     width: 50px;
     height: 50px;
     border-radius: .5rem;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -165,6 +165,7 @@ h3{
 /*CSS Reciclado*/
 body{
     overflow-x:hidden ;
+    width: 100%;
 }
 header{
     width: 100%;
@@ -216,6 +217,7 @@ header .container nav{
     align-items: center;
     height: 100%;
     width: max-content;
+    background-color: white;
 
     ul{
         display: flex;
@@ -340,23 +342,18 @@ main .main-foto .images{
     position: relative;
     .comment{
         position: absolute;
+        background-color: #ccc;
+        backdrop-filter: blur(5000px);
+        padding: 10px 20px;
+        border-radius: .5rem;
     }
 }
 main .main-foto .images:first-child{
     width:54%;
     height: 50%;
     .comment{
-        border-radius: .5rem;
         top: 40%;
         left: -20%;
-        background-color: transparent;
-        backdrop-filter: blur(10px);
-        background-image: linear-gradient(
-            120deg,
-            rgba(255,255,255,0.9),
-            rgba(0,0,0,0.6),
-            );
-            padding: 10px 20px;
     }
 }
 main .main-foto .images:nth-child(2){
@@ -374,9 +371,6 @@ main .main-foto .images:last-child{
 section{
     width: 90%;
     height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 100px 0px;
 
     .container{
@@ -386,6 +380,11 @@ section{
         width: 90%;
         height: 100%;
     }
+}
+.intro-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .intro-section  .section-foto{
     width: 50%;
@@ -514,7 +513,10 @@ section{
 .card-section{
     height: 50vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: red;
 }
 .card-section .infos{
     width: 50%;
@@ -580,13 +582,86 @@ section{
         overflow: hidden;
     }
 }
+.servicos
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicos .cabeca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cabeca h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.servicos .container{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.servicos .container .card{
+    background-color: white;
+    width: 250px;
+    height: 270px;
+    margin: 10px 10px;
+    border-radius: 7px;
+    z-index: 2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.050);
+    position: relative;
+    .icone{
+        width: 50px;
+        height: 50px;
+        background-color: #e9517a;
+        border-radius: 50%;
+    }
+}
+.servicos .container .card:hover
+{
+    box-shadow: none;
+    transition: .3s;
+}
+.card .icone{
+    border-radius: 7px;
+    width: 70px;
+    height: 70px;
+    margin: 0px 0px 5px 0px;
+}
+.card h3
+{
+    font-size: 18px;
+    margin-bottom:10px;
+}
+.card span{
+    height: 50%;
+    overflow: hidden;
+    font-size: 14px;
+}
+.card a{
+    margin: 10px 0px 0px 0px;
+    text-decoration: none;
+    color: #BF0033;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5%;
+}
 .gallery-section{
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     flex-direction: column;
-    background-color: #F9F9F9;
     padding: 50px 0px;
     width: 100vw;
 

@@ -10,7 +10,6 @@
     header{
         width: 100vw;
         padding: 0;
-        position: relative;
     }
     header .container{
         width: 95%;
@@ -18,9 +17,8 @@
     }
     header .container nav{
         position: absolute;
-        background-color: white;
         top: 100%;
-        right: 0;
+        right: -01%;
         border-bottom-left-radius: .5rem;
         border-bottom-right-radius: .5rem;
         z-index: 100;
@@ -28,7 +26,8 @@
         flex-direction: column;
         padding: 10px 5px;
         justify-content: flex-start;
-        /*transform: translateX(100%)!important;*/
+        transition: .6s;
+        transform: translateX(100%);
         ul{
             display: flex;
             width: 50vw;
@@ -53,15 +52,34 @@
             }
         }
     }
+    header .container .navbar.active{
+        transition: .6s;
+        transform: translateX(0%);
+    }
     header .container .header-buttons{
         button{
             padding: 5px 5px;
         }
     }
-    #active:checked ~ .navbar{ 
-        background-color: red;
-        transition: .6s;
+    .menu{
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 7px 5px;
+    
+        .line{
+            width: 90%;
+            height: 4px;
+            background-color: #BF0033;
+            border-radius: .5rem;
+        }
     }
+    
     main{
         width: 100%;
         flex-direction: column;
@@ -164,6 +182,38 @@
         width: 100%;
         padding: 0;
         margin: 0;
+        height: 100vh;
+        background-color: salmon;
+    }
+    .card-section .infos{
+        width: 100%;
+        background-color: red;
+    }
+    .card-section .cards{
+        background-color: pink;
+        width: 100%;
+    }
+    .servicos{
+        height: max-content;
+        .container{
+            margin: 0;
+            height: max-content;
+            padding: 0;
+            flex-direction: column;
+            width: 100%;
+        }
+        .card{
+            margin: 40px 0px;
+        }
+    }
+    .servicos .cabeca{
+        height: max-content;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .servicos .container .cabeca{
+        align-items: center;
+        text-align: center;
     }
     .gallery-section{
         align-items: center;
