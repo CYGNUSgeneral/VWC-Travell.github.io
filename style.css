@@ -7,7 +7,7 @@
 }
 :root{
     --color-primary:#BF0033;
-    --color-primary-variant:#db2052;
+    --color-primary-variant:#e9517a;
     
 }
 /*Important classes od animations*/
@@ -276,8 +276,8 @@ main .main-text .main-menu .option{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--color-primary);
-        background-color: var(--color-primary-variant);
+        color: #fff;
+        background-color: var(--color-primary);
         width: 45px;
         height: 45px;
         border-radius: 50%;
