@@ -254,7 +254,7 @@ main .main-text .main-menu{
         align-items: center;
         justify-content: space-between;
     }
-    animation: floating 2s infinite ease-in-out ;
+    animation: flutuar 2s infinite ease-in-out ;
 }
 @keyframes floating {
 	0% {
