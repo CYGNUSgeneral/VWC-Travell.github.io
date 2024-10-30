@@ -256,7 +256,7 @@ main .main-text .main-menu{
     }
     animation: flutuar 2s infinite ease-in-out ;
 }
-@keyframes floating {
+@keyframes flutuar {
 	0% {
 		transform: translatey(0px);
 	}
@@ -683,7 +683,6 @@ section{
     margin: 0
 }
 .newsletter-section .container{
-    background-color: ;
     flex-direction: column;
     justify-content: center;
     z-index: 2;
